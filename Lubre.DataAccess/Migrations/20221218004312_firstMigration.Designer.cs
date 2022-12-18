@@ -12,8 +12,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Lubre.DataAccess.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20221203020621_firstMigrations")]
-    partial class firstMigrations
+    [Migration("20221218004312_firstMigration")]
+    partial class firstMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -44,22 +44,7 @@ namespace Lubre.DataAccess.Migrations
                     b.ToTable("Document");
                 });
 
-            modelBuilder.Entity("Lubre.Entities.Gender", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Genders");
-                });
-
-            modelBuilder.Entity("Lubre.Entities.Person", b =>
+            modelBuilder.Entity("Lubre.Entities.Employee", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -70,12 +55,13 @@ namespace Lubre.DataAccess.Migrations
                         .HasMaxLength(150)
                         .HasColumnType("character varying(150)");
 
+                    b.Property<string>("CuilNumber")
+                        .IsRequired()
+                        .HasMaxLength(11)
+                        .HasColumnType("character varying(11)");
+
                     b.Property<DateTime>("DateOfBirth")
                         .HasColumnType("timestamp without time zone");
-
-                    b.Property<string>("Discriminator")
-                        .IsRequired()
-                        .HasColumnType("text");
 
                     b.Property<string>("DniNumber")
                         .IsRequired()
@@ -85,6 +71,9 @@ namespace Lubre.DataAccess.Migrations
                     b.Property<string>("EmailAddress")
                         .IsRequired()
                         .HasColumnType("text");
+
+                    b.Property<int>("FileNumber")
+                        .HasColumnType("integer");
 
                     b.Property<Guid>("GenderId")
                         .HasColumnType("uuid");
@@ -107,15 +96,39 @@ namespace Lubre.DataAccess.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<Guid>("PositionId")
+                        .HasColumnType("uuid");
+
+                    b.Property<DateTime>("StartDate")
+                        .HasColumnType("timestamp without time zone");
+
+                    b.Property<Guid>("UnitId")
+                        .HasColumnType("uuid");
+
                     b.HasKey("Id");
 
                     b.HasIndex("GenderId");
 
-                    b.ToTable("People");
+                    b.HasIndex("PositionId");
 
-                    b.HasDiscriminator<string>("Discriminator").HasValue("Person");
+                    b.HasIndex("UnitId");
 
-                    b.UseTphMappingStrategy();
+                    b.ToTable("Employees");
+                });
+
+            modelBuilder.Entity("Lubre.Entities.Gender", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Genders");
                 });
 
             modelBuilder.Entity("Lubre.Entities.Position", b =>
@@ -344,34 +357,6 @@ namespace Lubre.DataAccess.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("Lubre.Entities.Employee", b =>
-                {
-                    b.HasBaseType("Lubre.Entities.Person");
-
-                    b.Property<string>("CuilNumber")
-                        .IsRequired()
-                        .HasMaxLength(11)
-                        .HasColumnType("character varying(11)");
-
-                    b.Property<int>("FileNumber")
-                        .HasColumnType("integer");
-
-                    b.Property<Guid>("PositionId")
-                        .HasColumnType("uuid");
-
-                    b.Property<DateTime>("StartDate")
-                        .HasColumnType("timestamp without time zone");
-
-                    b.Property<Guid>("UnitId")
-                        .HasColumnType("uuid");
-
-                    b.HasIndex("PositionId");
-
-                    b.HasIndex("UnitId");
-
-                    b.HasDiscriminator().HasValue("Employee");
-                });
-
             modelBuilder.Entity("Lubre.Entities.Document", b =>
                 {
                     b.HasOne("Lubre.Entities.Employee", null)
@@ -379,7 +364,7 @@ namespace Lubre.DataAccess.Migrations
                         .HasForeignKey("EmployeeId");
                 });
 
-            modelBuilder.Entity("Lubre.Entities.Person", b =>
+            modelBuilder.Entity("Lubre.Entities.Employee", b =>
                 {
                     b.HasOne("Lubre.Entities.Gender", "Gender")
                         .WithMany()
@@ -387,7 +372,23 @@ namespace Lubre.DataAccess.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("Lubre.Entities.Position", "Position")
+                        .WithMany("Employees")
+                        .HasForeignKey("PositionId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Lubre.Entities.Unit", "Unit")
+                        .WithMany("Employees")
+                        .HasForeignKey("UnitId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("Gender");
+
+                    b.Navigation("Position");
+
+                    b.Navigation("Unit");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -443,21 +444,7 @@ namespace Lubre.DataAccess.Migrations
 
             modelBuilder.Entity("Lubre.Entities.Employee", b =>
                 {
-                    b.HasOne("Lubre.Entities.Position", "Position")
-                        .WithMany("Employees")
-                        .HasForeignKey("PositionId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Lubre.Entities.Unit", "Unit")
-                        .WithMany("Employees")
-                        .HasForeignKey("UnitId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Position");
-
-                    b.Navigation("Unit");
+                    b.Navigation("Documents");
                 });
 
             modelBuilder.Entity("Lubre.Entities.Position", b =>
@@ -468,11 +455,6 @@ namespace Lubre.DataAccess.Migrations
             modelBuilder.Entity("Lubre.Entities.Unit", b =>
                 {
                     b.Navigation("Employees");
-                });
-
-            modelBuilder.Entity("Lubre.Entities.Employee", b =>
-                {
-                    b.Navigation("Documents");
                 });
 #pragma warning restore 612, 618
         }

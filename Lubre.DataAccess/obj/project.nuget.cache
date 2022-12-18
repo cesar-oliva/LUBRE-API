@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hsaVXm8keb41du4TSwtJ7Yl4B9Sd65jhd33y9mQM4SoR0Z1aAasKQ8q7Q4kznbF6dq6Rg+QBM6SpnwGu0RyP4A==",
+  "dgSpecHash": "r73ksekNXvSjiHMd5R5FwbsSBKrG6YDVxFJQ/6YanfEkn5UH8du3YOOr1NFeovJaCQdKYYg9MXmC2NuIANSevg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\cesar\\Desktop\\API\\Lubre.DataAccess\\Lubre.DataAccess.csproj",
+  "projectFilePath": "G:\\Proyectos Linux\\LUBRE-API\\Lubre.DataAccess\\Lubre.DataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\cesar\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\cesar\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

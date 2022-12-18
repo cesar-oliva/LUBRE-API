@@ -13,3 +13,18 @@ C:\Users\cesar\Desktop\API\Lubre.Repository\obj\Debug\net7.0\Lubre.Repository.dl
 C:\Users\cesar\Desktop\API\Lubre.Repository\obj\Debug\net7.0\refint\Lubre.Repository.dll
 C:\Users\cesar\Desktop\API\Lubre.Repository\obj\Debug\net7.0\Lubre.Repository.pdb
 C:\Users\cesar\Desktop\API\Lubre.Repository\obj\Debug\net7.0\ref\Lubre.Repository.dll
+G:\Proyectos Linux\LUBRE-API\Lubre.Repository\bin\Debug\net7.0\Lubre.Repository.deps.json
+G:\Proyectos Linux\LUBRE-API\Lubre.Repository\bin\Debug\net7.0\Lubre.Repository.dll
+G:\Proyectos Linux\LUBRE-API\Lubre.Repository\bin\Debug\net7.0\Lubre.Repository.pdb
+G:\Proyectos Linux\LUBRE-API\Lubre.Repository\bin\Debug\net7.0\Lubre.Abstractions.dll
+G:\Proyectos Linux\LUBRE-API\Lubre.Repository\bin\Debug\net7.0\Lubre.Abstractions.pdb
+G:\Proyectos Linux\LUBRE-API\Lubre.Repository\obj\Debug\net7.0\Lubre.Repository.csproj.AssemblyReference.cache
+G:\Proyectos Linux\LUBRE-API\Lubre.Repository\obj\Debug\net7.0\Lubre.Repository.GeneratedMSBuildEditorConfig.editorconfig
+G:\Proyectos Linux\LUBRE-API\Lubre.Repository\obj\Debug\net7.0\Lubre.Repository.AssemblyInfoInputs.cache
+G:\Proyectos Linux\LUBRE-API\Lubre.Repository\obj\Debug\net7.0\Lubre.Repository.AssemblyInfo.cs
+G:\Proyectos Linux\LUBRE-API\Lubre.Repository\obj\Debug\net7.0\Lubre.Repository.csproj.CoreCompileInputs.cache
+G:\Proyectos Linux\LUBRE-API\Lubre.Repository\obj\Debug\net7.0\Lubre.Repository.csproj.CopyComplete
+G:\Proyectos Linux\LUBRE-API\Lubre.Repository\obj\Debug\net7.0\Lubre.Repository.dll
+G:\Proyectos Linux\LUBRE-API\Lubre.Repository\obj\Debug\net7.0\refint\Lubre.Repository.dll
+G:\Proyectos Linux\LUBRE-API\Lubre.Repository\obj\Debug\net7.0\Lubre.Repository.pdb
+G:\Proyectos Linux\LUBRE-API\Lubre.Repository\obj\Debug\net7.0\ref\Lubre.Repository.dll

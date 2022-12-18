@@ -33,11 +33,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\cesar\\Desktop\\API\\Lubre.Repository\\Lubre.Repository.csproj",
+      "projectUniqueName": "G:\\Proyectos Linux\\LUBRE-API\\Lubre.Repository\\Lubre.Repository.csproj",
       "projectName": "Lubre.Repository",
-      "projectPath": "C:\\Users\\cesar\\Desktop\\API\\Lubre.Repository\\Lubre.Repository.csproj",
+      "projectPath": "G:\\Proyectos Linux\\LUBRE-API\\Lubre.Repository\\Lubre.Repository.csproj",
       "packagesPath": "C:\\Users\\cesar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\cesar\\Desktop\\API\\Lubre.Repository\\obj\\",
+      "outputPath": "G:\\Proyectos Linux\\LUBRE-API\\Lubre.Repository\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -58,8 +58,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\cesar\\Desktop\\API\\Lubre.Abstractions\\Lubre.Abstractions.csproj": {
-              "projectPath": "C:\\Users\\cesar\\Desktop\\API\\Lubre.Abstractions\\Lubre.Abstractions.csproj"
+            "G:\\Proyectos Linux\\LUBRE-API\\Lubre.Abstractions\\Lubre.Abstractions.csproj": {
+              "projectPath": "G:\\Proyectos Linux\\LUBRE-API\\Lubre.Abstractions\\Lubre.Abstractions.csproj"
             }
           }
         }

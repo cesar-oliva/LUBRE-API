@@ -15,3 +15,20 @@ C:\Users\cesar\Desktop\API\Lubre.Services\obj\Debug\net7.0\Lubre.Services.dll
 C:\Users\cesar\Desktop\API\Lubre.Services\obj\Debug\net7.0\refint\Lubre.Services.dll
 C:\Users\cesar\Desktop\API\Lubre.Services\obj\Debug\net7.0\Lubre.Services.pdb
 C:\Users\cesar\Desktop\API\Lubre.Services\obj\Debug\net7.0\ref\Lubre.Services.dll
+G:\Proyectos Linux\LUBRE-API\Lubre.Services\bin\Debug\net7.0\Lubre.Services.deps.json
+G:\Proyectos Linux\LUBRE-API\Lubre.Services\bin\Debug\net7.0\Lubre.Services.dll
+G:\Proyectos Linux\LUBRE-API\Lubre.Services\bin\Debug\net7.0\Lubre.Services.pdb
+G:\Proyectos Linux\LUBRE-API\Lubre.Services\bin\Debug\net7.0\Lubre.Abstractions.dll
+G:\Proyectos Linux\LUBRE-API\Lubre.Services\bin\Debug\net7.0\Lubre.Entities.dll
+G:\Proyectos Linux\LUBRE-API\Lubre.Services\bin\Debug\net7.0\Lubre.Entities.pdb
+G:\Proyectos Linux\LUBRE-API\Lubre.Services\bin\Debug\net7.0\Lubre.Abstractions.pdb
+G:\Proyectos Linux\LUBRE-API\Lubre.Services\obj\Debug\net7.0\Lubre.Services.csproj.AssemblyReference.cache
+G:\Proyectos Linux\LUBRE-API\Lubre.Services\obj\Debug\net7.0\Lubre.Services.GeneratedMSBuildEditorConfig.editorconfig
+G:\Proyectos Linux\LUBRE-API\Lubre.Services\obj\Debug\net7.0\Lubre.Services.AssemblyInfoInputs.cache
+G:\Proyectos Linux\LUBRE-API\Lubre.Services\obj\Debug\net7.0\Lubre.Services.AssemblyInfo.cs
+G:\Proyectos Linux\LUBRE-API\Lubre.Services\obj\Debug\net7.0\Lubre.Services.csproj.CoreCompileInputs.cache
+G:\Proyectos Linux\LUBRE-API\Lubre.Services\obj\Debug\net7.0\Lubre.Services.csproj.CopyComplete
+G:\Proyectos Linux\LUBRE-API\Lubre.Services\obj\Debug\net7.0\Lubre.Services.dll
+G:\Proyectos Linux\LUBRE-API\Lubre.Services\obj\Debug\net7.0\refint\Lubre.Services.dll
+G:\Proyectos Linux\LUBRE-API\Lubre.Services\obj\Debug\net7.0\Lubre.Services.pdb
+G:\Proyectos Linux\LUBRE-API\Lubre.Services\obj\Debug\net7.0\ref\Lubre.Services.dll

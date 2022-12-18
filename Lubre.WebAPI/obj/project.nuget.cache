@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2JQh8nL5VQ8EFvAb3EM6OgqGC5val/pntAoGckz8+Y1LkoXnF8hY7y8oaCkAsVbdyYzBR8pgfpnUJTnaAb4qjg==",
+  "dgSpecHash": "5iICHd+GspDgQbzB3sfPw2BC1Tba9fKIpChDJCajo7p4C2Kjza9lQow79f3kirY5nh2ZT2X/embx8Hf+R4vECg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\cesar\\Desktop\\API\\Lubre.WebAPI\\Lubre.WebAPI.csproj",
+  "projectFilePath": "G:\\Proyectos Linux\\LUBRE-API\\Lubre.WebAPI\\Lubre.WebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\cesar\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\cesar\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",

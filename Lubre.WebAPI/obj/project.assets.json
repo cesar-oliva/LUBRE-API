@@ -8835,11 +8835,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\cesar\\Desktop\\API\\Lubre.WebAPI\\Lubre.WebAPI.csproj",
+      "projectUniqueName": "G:\\Proyectos Linux\\LUBRE-API\\Lubre.WebAPI\\Lubre.WebAPI.csproj",
       "projectName": "Lubre.WebAPI",
-      "projectPath": "C:\\Users\\cesar\\Desktop\\API\\Lubre.WebAPI\\Lubre.WebAPI.csproj",
+      "projectPath": "G:\\Proyectos Linux\\LUBRE-API\\Lubre.WebAPI\\Lubre.WebAPI.csproj",
       "packagesPath": "C:\\Users\\cesar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\cesar\\Desktop\\API\\Lubre.WebAPI\\obj\\",
+      "outputPath": "G:\\Proyectos Linux\\LUBRE-API\\Lubre.WebAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -8860,20 +8860,20 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\cesar\\Desktop\\API\\Lubre.Abstractions\\Lubre.Abstractions.csproj": {
-              "projectPath": "C:\\Users\\cesar\\Desktop\\API\\Lubre.Abstractions\\Lubre.Abstractions.csproj"
+            "G:\\Proyectos Linux\\LUBRE-API\\Lubre.Abstractions\\Lubre.Abstractions.csproj": {
+              "projectPath": "G:\\Proyectos Linux\\LUBRE-API\\Lubre.Abstractions\\Lubre.Abstractions.csproj"
             },
-            "C:\\Users\\cesar\\Desktop\\API\\Lubre.Application\\Lubre.Application.csproj": {
-              "projectPath": "C:\\Users\\cesar\\Desktop\\API\\Lubre.Application\\Lubre.Application.csproj"
+            "G:\\Proyectos Linux\\LUBRE-API\\Lubre.Application\\Lubre.Application.csproj": {
+              "projectPath": "G:\\Proyectos Linux\\LUBRE-API\\Lubre.Application\\Lubre.Application.csproj"
             },
-            "C:\\Users\\cesar\\Desktop\\API\\Lubre.DataAccess\\Lubre.DataAccess.csproj": {
-              "projectPath": "C:\\Users\\cesar\\Desktop\\API\\Lubre.DataAccess\\Lubre.DataAccess.csproj"
+            "G:\\Proyectos Linux\\LUBRE-API\\Lubre.DataAccess\\Lubre.DataAccess.csproj": {
+              "projectPath": "G:\\Proyectos Linux\\LUBRE-API\\Lubre.DataAccess\\Lubre.DataAccess.csproj"
             },
-            "C:\\Users\\cesar\\Desktop\\API\\Lubre.Repository\\Lubre.Repository.csproj": {
-              "projectPath": "C:\\Users\\cesar\\Desktop\\API\\Lubre.Repository\\Lubre.Repository.csproj"
+            "G:\\Proyectos Linux\\LUBRE-API\\Lubre.Repository\\Lubre.Repository.csproj": {
+              "projectPath": "G:\\Proyectos Linux\\LUBRE-API\\Lubre.Repository\\Lubre.Repository.csproj"
             },
-            "C:\\Users\\cesar\\Desktop\\API\\Lubre.Services\\Lubre.Services.csproj": {
-              "projectPath": "C:\\Users\\cesar\\Desktop\\API\\Lubre.Services\\Lubre.Services.csproj"
+            "G:\\Proyectos Linux\\LUBRE-API\\Lubre.Services\\Lubre.Services.csproj": {
+              "projectPath": "G:\\Proyectos Linux\\LUBRE-API\\Lubre.Services\\Lubre.Services.csproj"
             }
           }
         }

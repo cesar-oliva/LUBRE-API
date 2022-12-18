@@ -10,3 +10,15 @@ C:\Users\cesar\Desktop\API\Lubre.Abstractions\obj\Debug\net7.0\Lubre.Abstraction
 C:\Users\cesar\Desktop\API\Lubre.Abstractions\obj\Debug\net7.0\refint\Lubre.Abstractions.dll
 C:\Users\cesar\Desktop\API\Lubre.Abstractions\obj\Debug\net7.0\Lubre.Abstractions.pdb
 C:\Users\cesar\Desktop\API\Lubre.Abstractions\obj\Debug\net7.0\ref\Lubre.Abstractions.dll
+G:\Proyectos Linux\LUBRE-API\Lubre.Abstractions\bin\Debug\net7.0\Lubre.Abstractions.deps.json
+G:\Proyectos Linux\LUBRE-API\Lubre.Abstractions\bin\Debug\net7.0\Lubre.Abstractions.dll
+G:\Proyectos Linux\LUBRE-API\Lubre.Abstractions\bin\Debug\net7.0\Lubre.Abstractions.pdb
+G:\Proyectos Linux\LUBRE-API\Lubre.Abstractions\obj\Debug\net7.0\Lubre.Abstractions.csproj.AssemblyReference.cache
+G:\Proyectos Linux\LUBRE-API\Lubre.Abstractions\obj\Debug\net7.0\Lubre.Abstractions.GeneratedMSBuildEditorConfig.editorconfig
+G:\Proyectos Linux\LUBRE-API\Lubre.Abstractions\obj\Debug\net7.0\Lubre.Abstractions.AssemblyInfoInputs.cache
+G:\Proyectos Linux\LUBRE-API\Lubre.Abstractions\obj\Debug\net7.0\Lubre.Abstractions.AssemblyInfo.cs
+G:\Proyectos Linux\LUBRE-API\Lubre.Abstractions\obj\Debug\net7.0\Lubre.Abstractions.csproj.CoreCompileInputs.cache
+G:\Proyectos Linux\LUBRE-API\Lubre.Abstractions\obj\Debug\net7.0\Lubre.Abstractions.dll
+G:\Proyectos Linux\LUBRE-API\Lubre.Abstractions\obj\Debug\net7.0\refint\Lubre.Abstractions.dll
+G:\Proyectos Linux\LUBRE-API\Lubre.Abstractions\obj\Debug\net7.0\Lubre.Abstractions.pdb
+G:\Proyectos Linux\LUBRE-API\Lubre.Abstractions\obj\Debug\net7.0\ref\Lubre.Abstractions.dll

@@ -53,7 +53,13 @@ builder.Services.AddSingleton(mapper);
 
 
 var app = builder.Build();
-
+ // CORS
+    // https://docs.asp.net/en/latest/security/cors.html
+    app.UseCors(builder =>
+            builder.WithOrigins("http://localhost:4200", "http://www.myclientserver.com")
+                .AllowAnyHeader()
+                .AllowAnyMethod());
+                
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {

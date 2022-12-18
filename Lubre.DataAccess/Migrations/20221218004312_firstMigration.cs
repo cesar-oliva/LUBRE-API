@@ -7,7 +7,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Lubre.DataAccess.Migrations
 {
     /// <inheritdoc />
-    public partial class firstMigrations : Migration
+    public partial class firstMigration : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -194,43 +194,42 @@ namespace Lubre.DataAccess.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "People",
+                name: "Employees",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uuid", nullable: false),
+                    FileNumber = table.Column<int>(type: "integer", nullable: false),
+                    CuilNumber = table.Column<string>(type: "character varying(11)", maxLength: 11, nullable: false),
+                    StartDate = table.Column<DateTime>(type: "timestamp without time zone", nullable: false),
+                    UnitId = table.Column<Guid>(type: "uuid", nullable: false),
+                    PositionId = table.Column<Guid>(type: "uuid", nullable: false),
                     DniNumber = table.Column<string>(type: "character varying(8)", maxLength: 8, nullable: false),
                     Name = table.Column<string>(type: "character varying(50)", maxLength: 50, nullable: false),
                     LastName = table.Column<string>(type: "character varying(50)", maxLength: 50, nullable: false),
-                    GenderId = table.Column<Guid>(type: "uuid", nullable: false),
                     DateOfBirth = table.Column<DateTime>(type: "timestamp without time zone", nullable: false),
                     Address = table.Column<string>(type: "character varying(150)", maxLength: 150, nullable: false),
                     PhotoUrl = table.Column<string>(type: "text", nullable: false),
                     EmailAddress = table.Column<string>(type: "text", nullable: false),
                     PhoneNumber = table.Column<string>(type: "text", nullable: false),
-                    Discriminator = table.Column<string>(type: "text", nullable: false),
-                    FileNumber = table.Column<int>(type: "integer", nullable: true),
-                    CuilNumber = table.Column<string>(type: "character varying(11)", maxLength: 11, nullable: true),
-                    StartDate = table.Column<DateTime>(type: "timestamp without time zone", nullable: true),
-                    UnitId = table.Column<Guid>(type: "uuid", nullable: true),
-                    PositionId = table.Column<Guid>(type: "uuid", nullable: true)
+                    GenderId = table.Column<Guid>(type: "uuid", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_People", x => x.Id);
+                    table.PrimaryKey("PK_Employees", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_People_Genders_GenderId",
+                        name: "FK_Employees_Genders_GenderId",
                         column: x => x.GenderId,
                         principalTable: "Genders",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_People_Positions_PositionId",
+                        name: "FK_Employees_Positions_PositionId",
                         column: x => x.PositionId,
                         principalTable: "Positions",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_People_Units_UnitId",
+                        name: "FK_Employees_Units_UnitId",
                         column: x => x.UnitId,
                         principalTable: "Units",
                         principalColumn: "Id",
@@ -249,9 +248,9 @@ namespace Lubre.DataAccess.Migrations
                 {
                     table.PrimaryKey("PK_Document", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Document_People_EmployeeId",
+                        name: "FK_Document_Employees_EmployeeId",
                         column: x => x.EmployeeId,
-                        principalTable: "People",
+                        principalTable: "Employees",
                         principalColumn: "Id");
                 });
 
@@ -298,18 +297,18 @@ namespace Lubre.DataAccess.Migrations
                 column: "EmployeeId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_People_GenderId",
-                table: "People",
+                name: "IX_Employees_GenderId",
+                table: "Employees",
                 column: "GenderId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_People_PositionId",
-                table: "People",
+                name: "IX_Employees_PositionId",
+                table: "Employees",
                 column: "PositionId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_People_UnitId",
-                table: "People",
+                name: "IX_Employees_UnitId",
+                table: "Employees",
                 column: "UnitId");
         }
 
@@ -341,7 +340,7 @@ namespace Lubre.DataAccess.Migrations
                 name: "AspNetUsers");
 
             migrationBuilder.DropTable(
-                name: "People");
+                name: "Employees");
 
             migrationBuilder.DropTable(
                 name: "Genders");
